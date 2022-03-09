@@ -102,11 +102,6 @@
 
 }
 
-.hero_section * {
-    z-index: 1;
-    position: relative;
-}
-
 .hero_section::before{
     z-index: 0;
     content: "";
@@ -115,7 +110,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-color: var(--dark-blue);
     opacity: 90%;
     mix-blend-mode: hard-light; /*hace una mezcla de la imagen con la capa de color puesta encima*/
@@ -123,7 +118,10 @@
 
 /*trae hacia adelante todos los componentes del contenedor hero_section
 un nivel por encima del before anterior*/
-
+.hero_section * {
+    z-index: 1;
+    position: relative;
+}
 
 .hero_section-text h1{
     font-family: var(--fuente);
