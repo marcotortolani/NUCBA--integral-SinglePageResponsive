@@ -142,7 +142,7 @@ un nivel por encima del before anterior*/
 .hero_section-more{
     position: absolute;
     bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 6vw;
     width: 100%;
     height: 60px;
     display: flex;
@@ -557,7 +557,6 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
 }
 
 
-
 @media screen and (max-width: 415px) {
     :root {
         --padding-x: 25px;
@@ -614,4 +613,11 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         height: calc();
         padding: 0px;
     }
+}
+
+@media screen and (max-height: 700px){
+    .contact_formContainer-img{
+        display: none;
+    }
+    
 }
