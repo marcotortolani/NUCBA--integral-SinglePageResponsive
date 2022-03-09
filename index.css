@@ -596,7 +596,8 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
     }
     .section_title{
         font-size: 30px;
-        margin-bottom: 1vh;
+        margin-bottom: 0vh;
+        margin-top: 14px;
     }
 
     .container{
