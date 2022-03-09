@@ -433,6 +433,9 @@ un nivel por encima del before anterior*/
 .menu_mobile {
     display: none;
 }
+.menu_desplegable{
+    display: none;
+}
 
 .menu_mobile span{
   background: #4C9AD3;
@@ -467,22 +470,27 @@ un nivel por encima del before anterior*/
 
 
 .menu_mobile input[type="checkbox"]:checked ~ span:nth-of-type(2){
-  
   transform-origin:top;
   transform:rotatez(-45deg)
 }
 
 
 .menu_mobile input[type="checkbox"]:checked ~ span:nth-of-type(3){
-  
   transform-origin:bottom;
   width:50%;
   transform: translate(18px,-14px) rotatez(45deg);
 
 }
-  
-.menu_mobile2{
-    display: none;
+
+.menu_mobile input[type="checkbox"]:checked ~ .menu_desplegable{
+        display: flex;
+}
+
+ 
+/* *****************************************************************/
+
+.menu_desplegable{
+    /* display: none; */
     position: fixed;
     /* z-index: 4; */
     top: 80px;
@@ -498,17 +506,16 @@ un nivel por encima del before anterior*/
     align-items: center;
 }
 
-.menu_mobile2 ul{
+.menu_desplegable ul{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
+
     list-style: none;
     height: 100%;
-    
-
 }
 
-.menu_mobile2 ul li{
+.menu_desplegable ul li{
     margin: 0 10px;
     /* display: flex;
     justify-content: flex-start;
@@ -520,12 +527,12 @@ un nivel por encima del before anterior*/
 
 }
 
-.menu_mobile2 ul li:hover{
+.menu_desplegable ul li:hover{
     border-bottom: 2px solid var(--white); /* al pasar el mouse agrega un borde debajo de una linea de 1px solida y blanca */
     width: fit-content;
 }
 
-.menu_mobile2 ul li a{
+.menu_desplegable ul li a{
     text-decoration: none;
     font-size: 1.2em;
     color: var(--white);
@@ -569,9 +576,9 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         cursor:pointer;   
     }
 
-    .menu_mobile2{
+    /* .menu_desplegable{
         display: flex;    
-    }
+    } */
         
     .hero_section-more{
         margin-bottom: 15vw;
@@ -685,7 +692,7 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         height: calc();
         padding: 0px;
     }
-    .menu_mobile2{
+    .menu_desplegable{
         top: 60px;
     }
 }
