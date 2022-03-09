@@ -102,6 +102,11 @@
 
 }
 
+.hero_section * {
+    z-index: 1;
+    position: relative;
+}
+
 .hero_section::before{
     z-index: 0;
     content: "";
@@ -118,10 +123,7 @@
 
 /*trae hacia adelante todos los componentes del contenedor hero_section
 un nivel por encima del before anterior*/
-.hero_section * {
-    z-index: 1;
-    position: relative;
-}
+
 
 .hero_section-text h1{
     font-family: var(--fuente);
