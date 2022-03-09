@@ -511,6 +511,10 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         cursor:pointer;
         
     }
+    .hero_section-more{
+        margin-bottom: 10%;
+    }
+
     .contact_formContainer{
         grid-template-columns: 1fr;
         gap: 20px;
