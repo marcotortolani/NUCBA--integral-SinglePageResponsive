@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Team Invierno</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <!-- link ancor para que al clickear el logo
+        se dirija al home de la pagina -->
+        <a href="#">
+            <div class="logo">
+                <img src="/imgs/Snow-Logo.png" alt="">
+            </div>
+        </a>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#beneficios">beneficios</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+
+        <label for="menu_mobile" class="menu_mobile">
+            <input type="checkbox" id="menu_mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+        </label>
+    </nav>
+
+    <section class="hero_section">
+        <div class="hero_section-text">
+            <h1>bienvenidos <span>al himalaya</span></h1>
+        </div>
+
+        <div class="hero_section-more">
+            <p>Ver más</p>
+            <img src="/imgs/icons8-arrow-24.png" alt="">
+        </div>
+    </section>
+
+    <section class="about_section" id="about">
+        <div class="container">
+            <h2 class="section_title blueTitle"><span>Quiénes</span> somos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Laborum, nam? Vel minima ex eum ipsum provident voluptatibus ab sed temporibus reprehenderit, cum tempore, ratione omnis officiis et magnam tempora consequuntur!</p>
+        </div>
+    </section>
+
+    <section class="beneficios_section" id="beneficios">
+        <div class="container">
+            <h2 class="section_title blueTitle"><span>Beneficios</span></h2>
+
+            <div class="cardContainer">
+                <article class="beneficios_card">
+                    <div class="beneficios_card-img">
+                        <img src="/imgs/icons8-snowboarder-64.png" alt="">
+                    </div>
+                    <div class="beneficios_card-text">
+                        <h3>Hacer Snowboard</h3>
+                    </div>
+                </article>
+                <article class="beneficios_card">
+                    <div class="beneficios_card-img">
+                        <img src="/imgs/icons8-muñeco-de-nieve-64.png" alt="">
+                    </div>
+                    <div class="beneficios_card-text">
+                        <h3>Jugar con la nieve</h3>
+                    </div>
+                </article>
+                <article class="beneficios_card">
+                    <div class="beneficios_card-img">
+                        <img src="/imgs/icons8-cafe-100.png" alt="">
+                    </div>
+                    <div class="beneficios_card-text">
+                        <h3>Tomar rico cafe</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_section" id="contact">
+        <div class="container">
+            <h2 class="section_title whiteTitle">¡Sumate al <span>#teaminvierno</span>!</h2>
+            
+            <div class="contact_formContainer">
+                <div class="contact_formContainer-img">
+                    <img src="/imgs/sullivan2-monsters-inc-mike-sulley-to-the-rescue-mike-wazowski-james-p-sullivan-fictional-character-pixar-thumbnail.png" alt="">
+                </div>
+                <div class="contact_formContainer-form">
+                    <form action="">
+                        <div class="form_item">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form_item">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form_item">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" name="telefono" id="telefono">
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <footer class="derechos">
+        <div class="derechos-text">
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="derechos-img">
+            <img src="/imgs/nucba.png" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>
