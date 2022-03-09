@@ -109,7 +109,7 @@
     /* position: relative; */
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     /* el height del layer debe ser igual al height del background image, no se puede 
     poner uno en 100vh y el otro en 100% porque trae problemas en navegadores como
     los de celulares donde hay una barra de navegacion ocupando parte del porcentaje
@@ -161,7 +161,7 @@ un nivel por encima del before anterior*/
 .hero_section-more p{
     font-family: var(--fuente);
     color: var(--white);
-    text-align: start;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -214,7 +214,7 @@ un nivel por encima del before anterior*/
     font-family: var(--fuente);
     font-size: 20px;
     color: var(--dark-blue);
-    text-align: center;
+    text-align: start;
     line-height: 1.5; /* valor de interlineado */
 }
 
