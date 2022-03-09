@@ -2,6 +2,7 @@
 
 :root{
     --dark-blue: #051d3b; /* variable creada para independizar el valor de color */
+    
     --white: #fafafa;
     --fuente: "Montserrat", sans-serif; /* lo mismo pero con la tipografía */
     --padding-x: 100px;
@@ -480,7 +481,57 @@ un nivel por encima del before anterior*/
 
 }
   
+.menu_mobile2{
+    display: none;
+    position: fixed;
+    /* z-index: 4; */
+    top: 80px;
+    right: 0;
+    width: 140px;
+    max-width: 150px;
+    height: 155px;
+    background-color: var(--dark-blue);
+    opacity: 60%;
+    padding: 10px 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.menu_mobile2 ul{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    list-style: none;
+    height: 100%;
+    
+
+}
+
+.menu_mobile2 ul li{
+    margin: 0 10px;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    height: 20%;
+    border: 1px solid transparent; /* le da grosor, solido y transparencia para que las palabras queden quietas al hacer el hover */
+    transition: 0.3s;
+    margin-bottom: 25px;
+
+}
+
+.menu_mobile2 ul li:hover{
+    border-bottom: 2px solid var(--white); /* al pasar el mouse agrega un borde debajo de una linea de 1px solida y blanca */
+    width: fit-content;
+}
+
+.menu_mobile2 ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--white);
+    font-family: var(--fuente); 
+    z-index: 4;       
+}
 
 
 /* **************************************************************** */
@@ -517,7 +568,11 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         width:40px;
         cursor:pointer;   
     }
-    
+
+    .menu_mobile2{
+        display: flex;    
+    }
+        
     .hero_section-more{
         margin-bottom: 15vw;
     }
@@ -629,6 +684,9 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         height: 35px;
         height: calc();
         padding: 0px;
+    }
+    .menu_mobile2{
+        top: 60px;
     }
 }
 
