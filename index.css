@@ -110,7 +110,12 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    /* el height del layer debe ser igual al height del background image, no se puede 
+    poner uno en 100vh y el otro en 100% porque trae problemas en navegadores como
+    los de celulares donde hay una barra de navegacion ocupando parte del porcentaje
+    de pantalla, por eso el 100% trae problemas, en cambio el 100vh permite usar el
+    "100% de pantalla visible" */
+    height: 100vh; 
     background-color: var(--dark-blue);
     opacity: 90%;
     mix-blend-mode: hard-light; /*hace una mezcla de la imagen con la capa de color puesta encima*/
@@ -156,7 +161,7 @@ un nivel por encima del before anterior*/
 .hero_section-more p{
     font-family: var(--fuente);
     color: var(--white);
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;
     font-weight: 300;
 }
