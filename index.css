@@ -522,6 +522,11 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         margin-bottom: 15vw;
     }
 
+    .about_section .container .section_title{
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+
     .contact_formContainer{
         grid-template-columns: 1fr;
         gap: 20px;
@@ -590,7 +595,7 @@ medida de 10vw y dejarlo en relacion al tamaño de pantalla*/
         width: 90%;
     }
     .section_title{
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 1vh;
     }
 
