@@ -9,11 +9,20 @@
 }
 /* animación */
 @keyframes flecha{
-    from{
+    0%{
        bottom: -10px; 
     }
-    to{
+    100%{
        bottom: 5px;  
+    }
+}
+
+@keyframes desplegable{
+    from{
+        top: -20px;
+    }
+    to{
+        top: 80px;
     }
 }
 
@@ -35,6 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* box-shadow: 7px 5px 5px #7b7b7b85; */
 }
 
 .navbar .logo{
@@ -435,10 +445,12 @@ un nivel por encima del before anterior*/
 }
 .menu_desplegable{
     display: none;
+
 }
 
 .menu_mobile span{
-  background: #4C9AD3;
+  /* background: #4C9AD3; */
+  background: var(--white);
   border-radius:10px;
   height:5px;
   margin: 7px 0;
@@ -478,12 +490,16 @@ un nivel por encima del before anterior*/
 .menu_mobile input[type="checkbox"]:checked ~ span:nth-of-type(3){
   transform-origin:bottom;
   width:50%;
-  transform: translate(18px,-14px) rotatez(45deg);
+  transform: translate(18px,-13px) rotatez(45deg);
 
 }
 
 .menu_mobile input[type="checkbox"]:checked ~ .menu_desplegable{
         display: flex;
+        animation-name: desplegable;
+        animation-duration: 1s;
+        animation-iteration-count: initial;
+        animation-direction: alternate;      
 }
 
  
@@ -504,6 +520,8 @@ un nivel por encima del before anterior*/
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
+    
 }
 
 .menu_desplegable ul{
@@ -513,6 +531,8 @@ un nivel por encima del before anterior*/
 
     list-style: none;
     height: 100%;
+    
+    
 }
 
 .menu_desplegable ul li{
@@ -524,6 +544,8 @@ un nivel por encima del before anterior*/
     border: 1px solid transparent; /* le da grosor, solido y transparencia para que las palabras queden quietas al hacer el hover */
     transition: 0.3s;
     margin-bottom: 25px;
+    
+    
 
 }
 
@@ -537,7 +559,9 @@ un nivel por encima del before anterior*/
     font-size: 1.2em;
     color: var(--white);
     font-family: var(--fuente); 
-    z-index: 4;       
+    font-weight: 500;
+    
+  
 }
 
 
